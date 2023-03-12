@@ -199,7 +199,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1x-bo-vSp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-350" y="68"/>
+            <point key="canvasLocation" x="-294" y="68"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mGk-IR-9pr">
@@ -300,7 +300,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="BFL-Uq-LQG">
-                                        <rect key="frame" x="0.0" y="-240" width="240" height="980"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="980"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_6681" translatesAutoresizingMaskIntoConstraints="NO" id="1Lt-R8-Rhq">
@@ -387,18 +387,60 @@
                     </tabBar>
                     <connections>
                         <segue destination="Wtb-Ar-CEb" kind="relationship" relationship="viewControllers" id="NAj-W9-yQP"/>
-                        <segue destination="PEh-vJ-gtC" kind="relationship" relationship="viewControllers" id="dZ4-tO-Wv0"/>
-                        <segue destination="360-vt-C8r" kind="relationship" relationship="viewControllers" id="Top-In-LO7"/>
+                        <segue destination="U5j-17-1Rh" kind="relationship" relationship="viewControllers" id="5P6-e1-jPk"/>
+                        <segue destination="kuV-pB-DnW" kind="relationship" relationship="viewControllers" id="PwE-PV-uDh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEW-NA-3j3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1228.2442748091603" y="67.605633802816911"/>
         </scene>
+        <!--咪咪-->
+        <scene sceneID="IFt-7w-dAA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kuV-pB-DnW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="咪咪" image="heart.fill" catalog="system" id="Xak-94-YST"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fAI-Zi-zyw">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="360-vt-C8r" kind="relationship" relationship="rootViewController" id="XmA-u6-o19"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lgg-z6-sbU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295" y="830"/>
+        </scene>
+        <!--花花-->
+        <scene sceneID="apE-GL-8ds">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U5j-17-1Rh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="花花" image="heart" catalog="system" id="i2Q-XG-imU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tTx-y1-FOg">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PEh-vJ-gtC" kind="relationship" relationship="rootViewController" id="52u-bQ-nhR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ob8-Y7-a4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295" y="-601"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="H1U-mx-asP"/>
-        <segue reference="xK9-D6-Ae9"/>
+        <segue reference="XmA-u6-o19"/>
+        <segue reference="52u-bQ-nhR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG_5332 1" width="3088" height="2316"/>
@@ -414,6 +456,7 @@
         <image name="S__70909967" width="1479" height="1109"/>
         <image name="S__70909968" width="1568" height="1046"/>
         <image name="apple.logo" catalog="system" width="105" height="128"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <systemColor name="systemBrownColor">
